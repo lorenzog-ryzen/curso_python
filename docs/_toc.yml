@@ -5,3 +5,6 @@ format: jb-book
 root: intro
 chapters:
 - file: 1.intro
+- file: 2.pandas_basico
+- file: 3.estructuras_control_python
+- file: 4.variables_python

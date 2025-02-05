@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introducción &#8212; My Jupyter Book</title>
+    <title>Estructuras de Control en Python &#8212; My Jupyter Book</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '1.intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '3.estructuras_control_python';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introducción a Pandas" href="2.pandas_basico.html" />
-    <link rel="prev" title="Welcome to Python-Universidad del norte" href="intro.html" />
+    <link rel="next" title="Tipos de Variables en Python" href="4.variables_python.html" />
+    <link rel="prev" title="Introducción a Pandas" href="2.pandas_basico.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,9 +171,9 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.intro.html">Introducción</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2.pandas_basico.html">Introducción a Pandas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3.estructuras_control_python.html">Estructuras de Control en Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Estructuras de Control en Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4.variables_python.html">Tipos de Variables en Python</a></li>
 </ul>
 
@@ -229,7 +229,7 @@
       
       
       
-      <li><a href="_sources/1.intro.ipynb" target="_blank"
+      <li><a href="_sources/3.estructuras_control_python.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,7 +313,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introducción</h1>
+    <h1>Estructuras de Control en Python</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -323,18 +323,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-codigos">Ejemplos de codigos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c">C++</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript">JavaScript</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. 🌐</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. 📊🤖</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. ⚙️</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 💻</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.  🔐</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-for">Ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-while">Ciclo <code class="docutils literal notranslate"><span class="pre">while</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicion-if">Condición <code class="docutils literal notranslate"><span class="pre">if</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusión</a></li>
 </ul>
             </nav>
         </div>
@@ -346,105 +338,103 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion">
-<h1>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h1>
-<blockquote>
-<div><p>Con la digitalización en el centro de la estrategia empresarial, los perfiles tecnológicos asociados al desarrollo de software, DevOps, las ciencias de datos, ciberseguridad y móviles se posicionan como los más codiciados por las compañías nacionales e internacionales que operan en el país.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="estructuras-de-control-en-python">
+<h1>Estructuras de Control en Python<a class="headerlink" href="#estructuras-de-control-en-python" title="Link to this heading">#</a></h1>
+<p>En este notebook aprenderemos sobre las estructuras de control más usadas en Python:</p>
 <ul class="simple">
-<li><p><strong>Desarrolladores Full Stack</strong>: Entre 5.000.000 y 20.000.000 de pesos.</p></li>
-<li><p><strong>Ingenieros DevOps</strong>: Entre 12.000.000 y 25.000.000 de pesos.</p></li>
-<li><p><strong>Científicos de datos</strong>: Entre 9.000.000 y 25.000.000 de pesos.</p></li>
-<li><p><strong>Expertos en ciberseguridad</strong>: Entre 7.000.000 y 20.000.000 de pesos.</p></li>
-<li><p><strong>Desarrolladores de aplicaciones móviles</strong>: Entre 8.000.000 y 26.000.000 de pesos.</p></li>
+<li><p><strong>Ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code></strong></p></li>
+<li><p><strong>Ciclo <code class="docutils literal notranslate"><span class="pre">while</span></code></strong></p></li>
+<li><p><strong>Condiciones <code class="docutils literal notranslate"><span class="pre">if</span></code></strong></p></li>
 </ul>
-</div></blockquote>
-<p><a class="reference external" href="https://www.xataka.com.co/empresas-y-economia/5-26-millones-pesos-al-mes-estos-salarios-perfiles-tecnologicos-clave-para-2024-colombia">Xataka Colombia - Salarios de perfiles tecnológicos en 2024</a></p>
-<p><img alt="Description of Image" src="_images/graph_1.png" /></p>
-<p>Python Nace en 1989. Este es un lenguaje de programacion que nace con el proposito de integrar de manera eficiente distintos procesos.</p>
-<p><img alt="Description of Image" src="_images/guido_VR.png" /></p>
-<p>Es muy llamativo por su legibilidad y facilidad de uso. No requiere la declaración de variables, a diferencia de otros lenguajes</p>
-<section id="ejemplos-de-codigos">
-<h2>Ejemplos de codigos<a class="headerlink" href="#ejemplos-de-codigos" title="Link to this heading">#</a></h2>
-<section id="python">
-<h3>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">**</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">n</span><span class="o">**</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<p>Estas estructuras nos permiten controlar el flujo de ejecución del programa.</p>
+<section id="ciclo-for">
+<h2>Ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#ciclo-for" title="Link to this heading">#</a></h2>
+<p>El ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code> se utiliza para iterar sobre una secuencia.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;manzana&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;cereza&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">fruta</span> <span class="ow">in</span> <span class="n">frutas</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Fruta:&#39;</span><span class="p">,</span> <span class="n">fruta</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="java">
-<h3>Java<a class="headerlink" href="#java" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="k">class</span> <span class="nc">Potencias</span> <span class="p">{</span>
-    <span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nb">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="s2">&quot;**&quot;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="n">Math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">));</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fruta: manzana
+Fruta: banana
+Fruta: cereza
 </pre></div>
 </div>
-</section>
-<section id="c">
-<h3>C++<a class="headerlink" href="#c" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;iostream&gt;</span>
-<span class="c1">#include &lt;cmath&gt;</span>
-
-<span class="nb">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="p">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;**&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">static_cast</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">))</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="p">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo de ciclo for con range</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número:&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="javascript">
-<h3>JavaScript<a class="headerlink" href="#javascript" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>let n = 10;
-for (let i = 0; i &lt; n; i++) {
-    console.log(`${n}**${i}: ${n ** i}`);
-}
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Número: 0
+Número: 1
+Número: 2
+Número: 3
+Número: 4
 </pre></div>
 </div>
+</div>
+</div>
 </section>
+<section id="ciclo-while">
+<h2>Ciclo <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#ciclo-while" title="Link to this heading">#</a></h2>
+<p>El ciclo <code class="docutils literal notranslate"><span class="pre">while</span></code> se ejecuta mientras una condición sea verdadera.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo de ciclo while</span>
+<span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Contador:&#39;</span><span class="p">,</span> <span class="n">contador</span><span class="p">)</span>
+    <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Contador: 0
+Contador: 1
+Contador: 2
+Contador: 3
+Contador: 4
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="id1">
-<h2>1. 🌐<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Se usa con frameworks como <strong>Django</strong> y <strong>Flask</strong> para crear sitios web, APIs y aplicaciones escalables.</p></li>
-<li><p>Ejemplo: Backends de plataformas como Instagram y Spotify.</p></li>
-</ul>
+<section id="condicion-if">
+<h2>Condición <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#condicion-if" title="Link to this heading">#</a></h2>
+<p>La estructura <code class="docutils literal notranslate"><span class="pre">if</span></code> permite ejecutar código basado en condiciones.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo de if-elif-else</span>
+<span class="n">edad</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="k">if</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Eres menor de edad&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">edad</span> <span class="o">==</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tienes 18 años&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Eres mayor de edad&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tienes 18 años
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="id2">
-<h2>2. 📊🤖<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Ampliamente utilizado en análisis de datos, modelado estadístico y aprendizaje automático.</p></li>
-<li><p>Librerías clave: <strong>Pandas</strong>, <strong>NumPy</strong>, <strong>scikit-learn</strong>, <strong>TensorFlow</strong>, <strong>PyTorch</strong>.</p></li>
-</ul>
-</section>
-<section id="id3">
-<h2>3. ⚙️<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Permite escribir scripts que automatizan tareas repetitivas como procesamiento de archivos, web scraping o administración de sistemas.</p></li>
-<li><p>Librerías clave: <strong>Selenium</strong>, <strong>BeautifulSoup</strong>, <strong>OS</strong>, <strong>shutil</strong>.</p></li>
-</ul>
-</section>
-<section id="id4">
-<h2>4. 💻<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Se usa para crear aplicaciones de escritorio, videojuegos y software en general.</p></li>
-<li><p>Librerías clave: <strong>PyQt</strong>, <strong>Tkinter</strong>, <strong>Kivy</strong>, <strong>Pygame</strong>.</p></li>
-</ul>
-</section>
-<section id="id5">
-<h2>5.  🔐<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Python es utilizado para análisis forense, pruebas de penetración y creación de herramientas de seguridad.</p></li>
-<li><p>Librerías clave: <strong>Scapy</strong>, <strong>PyCryptodome</strong>, <strong>Impacket</strong>, <strong>Requests</strong>.</p></li>
-</ul>
+<section id="conclusion">
+<h2>Conclusión<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>En este notebook hemos aprendido sobre ciclos y estructuras condicionales en Python, con ejemplos de <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">while</span></code> y <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p>
 </section>
 </section>
 
@@ -479,20 +469,20 @@ for (let i = 0; i &lt; n; i++) {
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="2.pandas_basico.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to Python-Universidad del norte</p>
+        <p class="prev-next-title">Introducción a Pandas</p>
       </div>
     </a>
     <a class="right-next"
-       href="2.pandas_basico.html"
+       href="4.variables_python.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introducción a Pandas</p>
+        <p class="prev-next-title">Tipos de Variables en Python</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -512,18 +502,10 @@ for (let i = 0; i &lt; n; i++) {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-codigos">Ejemplos de codigos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c">C++</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript">JavaScript</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. 🌐</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. 📊🤖</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. ⚙️</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 💻</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.  🔐</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-for">Ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-while">Ciclo <code class="docutils literal notranslate"><span class="pre">while</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicion-if">Condición <code class="docutils literal notranslate"><span class="pre">if</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusión</a></li>
 </ul>
   </nav></div>
 

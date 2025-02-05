@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introducción &#8212; My Jupyter Book</title>
+    <title>Tipos de Variables en Python &#8212; My Jupyter Book</title>
   
   
   
@@ -57,11 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '1.intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '4.variables_python';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introducción a Pandas" href="2.pandas_basico.html" />
-    <link rel="prev" title="Welcome to Python-Universidad del norte" href="intro.html" />
+    <link rel="prev" title="Estructuras de Control en Python" href="3.estructuras_control_python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,10 +170,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.intro.html">Introducción</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2.pandas_basico.html">Introducción a Pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3.estructuras_control_python.html">Estructuras de Control en Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4.variables_python.html">Tipos de Variables en Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tipos de Variables en Python</a></li>
 </ul>
 
     </div>
@@ -229,7 +228,7 @@
       
       
       
-      <li><a href="_sources/1.intro.ipynb" target="_blank"
+      <li><a href="_sources/4.variables_python.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,7 +312,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introducción</h1>
+    <h1>Tipos de Variables en Python</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -323,18 +322,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-codigos">Ejemplos de codigos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c">C++</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript">JavaScript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-numericas">Variables Numéricas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-matematicas">Operaciones Matemáticas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. 🌐</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. 📊🤖</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. ⚙️</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 💻</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.  🔐</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-de-tipo-string">Variables de Tipo String</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-cadenas-de-texto">Operaciones con Cadenas de Texto</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -346,105 +341,146 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion">
-<h1>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h1>
-<blockquote>
-<div><p>Con la digitalización en el centro de la estrategia empresarial, los perfiles tecnológicos asociados al desarrollo de software, DevOps, las ciencias de datos, ciberseguridad y móviles se posicionan como los más codiciados por las compañías nacionales e internacionales que operan en el país.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tipos-de-variables-en-python">
+<h1>Tipos de Variables en Python<a class="headerlink" href="#tipos-de-variables-en-python" title="Link to this heading">#</a></h1>
+<p>En Python, las variables pueden almacenar diferentes tipos de datos. Algunos de los más comunes son:</p>
 <ul class="simple">
-<li><p><strong>Desarrolladores Full Stack</strong>: Entre 5.000.000 y 20.000.000 de pesos.</p></li>
-<li><p><strong>Ingenieros DevOps</strong>: Entre 12.000.000 y 25.000.000 de pesos.</p></li>
-<li><p><strong>Científicos de datos</strong>: Entre 9.000.000 y 25.000.000 de pesos.</p></li>
-<li><p><strong>Expertos en ciberseguridad</strong>: Entre 7.000.000 y 20.000.000 de pesos.</p></li>
-<li><p><strong>Desarrolladores de aplicaciones móviles</strong>: Entre 8.000.000 y 26.000.000 de pesos.</p></li>
+<li><p><strong>Enteros (<code class="docutils literal notranslate"><span class="pre">int</span></code>)</strong>: Números sin decimales.</p></li>
+<li><p><strong>Flotantes (<code class="docutils literal notranslate"><span class="pre">float</span></code>)</strong>: Números con decimales.</p></li>
+<li><p><strong>Cadenas (<code class="docutils literal notranslate"><span class="pre">str</span></code>)</strong>: Texto.</p></li>
 </ul>
-</div></blockquote>
-<p><a class="reference external" href="https://www.xataka.com.co/empresas-y-economia/5-26-millones-pesos-al-mes-estos-salarios-perfiles-tecnologicos-clave-para-2024-colombia">Xataka Colombia - Salarios de perfiles tecnológicos en 2024</a></p>
-<p><img alt="Description of Image" src="_images/graph_1.png" /></p>
-<p>Python Nace en 1989. Este es un lenguaje de programacion que nace con el proposito de integrar de manera eficiente distintos procesos.</p>
-<p><img alt="Description of Image" src="_images/guido_VR.png" /></p>
-<p>Es muy llamativo por su legibilidad y facilidad de uso. No requiere la declaración de variables, a diferencia de otros lenguajes</p>
-<section id="ejemplos-de-codigos">
-<h2>Ejemplos de codigos<a class="headerlink" href="#ejemplos-de-codigos" title="Link to this heading">#</a></h2>
-<section id="python">
-<h3>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">**</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">n</span><span class="o">**</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="java">
-<h3>Java<a class="headerlink" href="#java" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="k">class</span> <span class="nc">Potencias</span> <span class="p">{</span>
-    <span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nb">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="s2">&quot;**&quot;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="n">Math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">));</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</section>
-<section id="c">
-<h3>C++<a class="headerlink" href="#c" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;iostream&gt;</span>
-<span class="c1">#include &lt;cmath&gt;</span>
+<p>A continuación, veremos ejemplos de cada uno y algunas operaciones comunes.</p>
+<section id="variables-numericas">
+<h2>Variables Numéricas<a class="headerlink" href="#variables-numericas" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definición de variables numéricas</span>
+<span class="n">num_entero</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Variable de tipo entero</span>
+<span class="n">num_flotante</span> <span class="o">=</span> <span class="mf">3.14</span>  <span class="c1"># Variable de tipo flotante</span>
 
-<span class="nb">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="p">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;**&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">static_cast</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">))</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="p">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+
+<span class="c1"># Mostrar los valores y tipos de datos</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Entero:&#39;</span><span class="p">,</span> <span class="n">num_entero</span><span class="p">,</span> <span class="s1">&#39;Tipo:&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">num_entero</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Flotante:&#39;</span><span class="p">,</span> <span class="n">num_flotante</span><span class="p">,</span> <span class="s1">&#39;Tipo:&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">num_flotante</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
-<section id="javascript">
-<h3>JavaScript<a class="headerlink" href="#javascript" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>let n = 10;
-for (let i = 0; i &lt; n; i++) {
-    console.log(`${n}**${i}: ${n ** i}`);
-}
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Entero: 10 Tipo: &lt;class &#39;int&#39;&gt;
+Flotante: 3.14 Tipo: &lt;class &#39;float&#39;&gt;
 </pre></div>
+</div>
+</div>
+</div>
+<section id="operaciones-matematicas">
+<h3>Operaciones Matemáticas<a class="headerlink" href="#operaciones-matematicas" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Operaciones matemáticas básicas</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">suma</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="n">resta</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="n">multiplicacion</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="n">division</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>  <span class="c1"># División flotante</span>
+<span class="n">division_entera</span> <span class="o">=</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>  <span class="c1"># División entera</span>
+<span class="n">modulo</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>  <span class="c1"># Módulo (resto de la división)</span>
+<span class="n">potencia</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span>  <span class="c1"># Potencia</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Suma:&#39;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Resta:&#39;</span><span class="p">,</span> <span class="n">resta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Multiplicación:&#39;</span><span class="p">,</span> <span class="n">multiplicacion</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;División:&#39;</span><span class="p">,</span> <span class="n">division</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;División Entera:&#39;</span><span class="p">,</span> <span class="n">division_entera</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Módulo:&#39;</span><span class="p">,</span> <span class="n">modulo</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Potencia:&#39;</span><span class="p">,</span> <span class="n">potencia</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Suma: 19
+Resta: 11
+Multiplicación: 60
+División: 3.75
+División Entera: 3
+Módulo: 3
+Potencia: 50625
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
-<section id="id1">
-<h2>1. 🌐<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Se usa con frameworks como <strong>Django</strong> y <strong>Flask</strong> para crear sitios web, APIs y aplicaciones escalables.</p></li>
-<li><p>Ejemplo: Backends de plataformas como Instagram y Spotify.</p></li>
-</ul>
+<section id="variables-de-tipo-string">
+<h2>Variables de Tipo String<a class="headerlink" href="#variables-de-tipo-string" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definición de una variable tipo string</span>
+<span class="n">texto</span> <span class="o">=</span> <span class="s1">&#39;Hola, Python!&#39;</span>
+
+<span class="c1"># Mostrar el valor y tipo de la variable</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Texto:&#39;</span><span class="p">,</span> <span class="n">texto</span><span class="p">,</span> <span class="s1">&#39;Tipo:&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">texto</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Texto: Hola, Python! Tipo: &lt;class &#39;str&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="operaciones-con-cadenas-de-texto">
+<h3>Operaciones con Cadenas de Texto<a class="headerlink" href="#operaciones-con-cadenas-de-texto" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Concatenación de strings</span>
+<span class="n">saludo</span> <span class="o">=</span> <span class="s1">&#39;Hola&#39;</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Mundo&#39;</span>
+<span class="n">mensaje</span> <span class="o">=</span> <span class="n">saludo</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s1">&#39;!&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Concatenación:&#39;</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Concatenación: Hola, Mundo!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Repetición de strings</span>
+<span class="n">repeticion</span> <span class="o">=</span> <span class="s1">&#39;Python &#39;</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Repetición:&#39;</span><span class="p">,</span> <span class="n">repeticion</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Repetición: Python Python Python 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Acceso a caracteres y subcadenas</span>
+<span class="n">texto</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Primer carácter:&#39;</span><span class="p">,</span> <span class="n">texto</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Último carácter:&#39;</span><span class="p">,</span> <span class="n">texto</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Subcadena:&#39;</span><span class="p">,</span> <span class="n">texto</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Primer carácter: P
+Último carácter: n
+Subcadena: yth
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="id2">
-<h2>2. 📊🤖<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Ampliamente utilizado en análisis de datos, modelado estadístico y aprendizaje automático.</p></li>
-<li><p>Librerías clave: <strong>Pandas</strong>, <strong>NumPy</strong>, <strong>scikit-learn</strong>, <strong>TensorFlow</strong>, <strong>PyTorch</strong>.</p></li>
-</ul>
-</section>
-<section id="id3">
-<h2>3. ⚙️<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Permite escribir scripts que automatizan tareas repetitivas como procesamiento de archivos, web scraping o administración de sistemas.</p></li>
-<li><p>Librerías clave: <strong>Selenium</strong>, <strong>BeautifulSoup</strong>, <strong>OS</strong>, <strong>shutil</strong>.</p></li>
-</ul>
-</section>
-<section id="id4">
-<h2>4. 💻<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Se usa para crear aplicaciones de escritorio, videojuegos y software en general.</p></li>
-<li><p>Librerías clave: <strong>PyQt</strong>, <strong>Tkinter</strong>, <strong>Kivy</strong>, <strong>Pygame</strong>.</p></li>
-</ul>
-</section>
-<section id="id5">
-<h2>5.  🔐<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Python es utilizado para análisis forense, pruebas de penetración y creación de herramientas de seguridad.</p></li>
-<li><p>Librerías clave: <strong>Scapy</strong>, <strong>PyCryptodome</strong>, <strong>Impacket</strong>, <strong>Requests</strong>.</p></li>
-</ul>
 </section>
 </section>
 
@@ -479,22 +515,13 @@ for (let i = 0; i &lt; n; i++) {
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="3.estructuras_control_python.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to Python-Universidad del norte</p>
+        <p class="prev-next-title">Estructuras de Control en Python</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="2.pandas_basico.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introducción a Pandas</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -512,18 +539,14 @@ for (let i = 0; i &lt; n; i++) {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-codigos">Ejemplos de codigos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c">C++</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript">JavaScript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-numericas">Variables Numéricas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-matematicas">Operaciones Matemáticas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. 🌐</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. 📊🤖</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. ⚙️</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. 💻</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.  🔐</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-de-tipo-string">Variables de Tipo String</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-cadenas-de-texto">Operaciones con Cadenas de Texto</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
