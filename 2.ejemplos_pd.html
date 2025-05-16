@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introducción &#8212; Mi jbook</title>
+    <title>Funciones Principales de Pandas &#8212; Mi jbook</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '1.intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2.ejemplos_pd';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Funciones Principales de Pandas" href="2.ejemplos_pd.html" />
-    <link rel="prev" title="Bienvenidos a Python-Universidad del norte" href="intro.html" />
+    <link rel="next" title="Ejemplo de limpieza en pandas" href="3.ejemplo.html" />
+    <link rel="prev" title="Introducción" href="1.intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,9 +169,9 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.intro.html">Introducción</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="2.ejemplos_pd.html">Funciones Principales de Pandas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Funciones Principales de Pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3.ejemplo.html">Ejemplo de limpieza en pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4.read_dataset.html">Lectura y conversión de un dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5.ejemplos_px.html">Gráficos comunes con Plotly Express</a></li>
@@ -251,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F1.intro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2.ejemplos_pd.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +281,7 @@
       
       
       
-      <li><a href="_sources/1.intro.ipynb" target="_blank"
+      <li><a href="_sources/2.ejemplos_pd.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +357,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introducción</h1>
+    <h1>Funciones Principales de Pandas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -367,21 +367,14 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introducción</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c">C++</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript">JavaScript</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 🌐</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 📊🤖</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. ⚙️</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 💻</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5.  🔐</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lectura-y-escritura-de-datos">Lectura y Escritura de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-objetos">Creación de Objetos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploracion-y-resumen">Exploración y Resumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccion-y-filtrado">Selección y Filtrado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modificacion-de-datos">Modificación de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupacion-y-combinacion">Agrupación y Combinación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-y-operaciones">Estadísticas y Operaciones</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -392,100 +385,87 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion">
-<h1>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h1>
-<p>“ Con la digitalización en el centro de la estrategia empresarial, los perfiles tecnológicos asociados al desarrollo de software, DevOps, las ciencias de datos, ciberseguridad, y móviles se posicionan como los más codiciados por las compañías nacionales e internacionales que operan en el país.</p>
-<ul class="simple">
-<li><p>Desarrolladores Full Stack: Entre 5.000.000 y 20.000.000 de pesos.</p></li>
-<li><p>Ingenieros DevOps: Entre 12.000.000 y 25.000.000 de pesos.</p></li>
-<li><p>Científicos de datos: Entre 9.000.000 y 25.000.000 de pesos.</p></li>
-<li><p>Expertos en ciberseguridad: Entre 7.000.000 y 20.000.000 de pesos.</p></li>
-<li><p>Desarrolladores de aplicaciones móviles: Entre 8.000.0000 y 26.000.000 de pesos. “</p></li>
-</ul>
-<p><img alt="Description of Image" src="_images/graph_1.png" /></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="python">
-<h1>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h1>
-<p>Es muy llamativo por su legibilidad y facilidad de uso. No requiere la declaración de variables, a diferencia de otros lenguajes</p>
-<section id="id1">
-<h2>Python<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">**</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">n</span><span class="o">**</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="java">
-<h2>Java<a class="headerlink" href="#java" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="k">class</span><span class="w"> </span><span class="nc">Potencias</span> <span class="p">{</span>
-    <span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nb">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="s2">&quot;**&quot;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="n">Math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">));</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</section>
-<section id="c">
-<h2>C++<a class="headerlink" href="#c" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;iostream&gt;</span>
-<span class="c1">#include &lt;cmath&gt;</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="funciones-principales-de-pandas">
+<h1>Funciones Principales de Pandas<a class="headerlink" href="#funciones-principales-de-pandas" title="Link to this heading">#</a></h1>
+<section id="lectura-y-escritura-de-datos">
+<h2>Lectura y Escritura de Datos<a class="headerlink" href="#lectura-y-escritura-de-datos" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;archivo.csv&#39;</span><span class="p">)</span>            <span class="c1"># Leer archivo CSV  </span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;archivo.xlsx&#39;</span><span class="p">)</span>         <span class="c1"># Leer archivo Excel  </span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">conexion</span><span class="p">)</span>          <span class="c1"># Leer desde base de datos SQL  </span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">&#39;archivo.json&#39;</span><span class="p">)</span>          <span class="c1"># Leer archivo JSON  </span>
 
-<span class="nb">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="p">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">n</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;**&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">static_cast</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">))</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="p">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;archivo.csv&#39;</span><span class="p">)</span>              <span class="c1"># Guardar a CSV  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;archivo.xlsx&#39;</span><span class="p">)</span>           <span class="c1"># Guardar a Excel  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="s1">&#39;archivo.json&#39;</span><span class="p">)</span>            <span class="c1"># Guardar a JSON  </span>
 </pre></div>
 </div>
 </section>
-<section id="javascript">
-<h2>JavaScript<a class="headerlink" href="#javascript" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>let n = 10;
-for (let i = 0; i &lt; n; i++) {
-    console.log(`${n}**${i}: ${n ** i}`);
-}
+<hr class="docutils" />
+<section id="creacion-de-objetos">
+<h2>Creación de Objetos<a class="headerlink" href="#creacion-de-objetos" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;col1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>  <span class="c1"># Crear un DataFrame  </span>
 </pre></div>
 </div>
 </section>
-<section id="id2">
-<h2>1. 🌐<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Se usa con frameworks como <strong>Django</strong> y <strong>Flask</strong> para crear sitios web, APIs y aplicaciones escalables.</p></li>
-<li><p>Ejemplo: Backends de plataformas como Instagram y Spotify.</p></li>
-</ul>
+<hr class="docutils" />
+<section id="exploracion-y-resumen">
+<h2>Exploración y Resumen<a class="headerlink" href="#exploracion-y-resumen" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>                     <span class="c1"># Conteo de valores unicos</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>                             <span class="c1"># Primeras filas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>                             <span class="c1"># Últimas filas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>                             <span class="c1"># Información general  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>                         <span class="c1"># Estadísticas descriptivas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">shape</span>                              <span class="c1"># Dimensiones  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span>                            <span class="c1"># Nombres de columnas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">index</span>                              <span class="c1"># Índice del DataFrame  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>                             <span class="c1"># Tipos de datos  </span>
+</pre></div>
+</div>
 </section>
-<section id="id3">
-<h2>2. 📊🤖<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Ampliamente utilizado en análisis de datos, modelado estadístico y aprendizaje automático.</p></li>
-<li><p>Librerías clave: <strong>Pandas</strong>, <strong>NumPy</strong>, <strong>scikit-learn</strong>, <strong>TensorFlow</strong>, <strong>PyTorch</strong>.</p></li>
-</ul>
+<hr class="docutils" />
+<section id="seleccion-y-filtrado">
+<h2>Selección y Filtrado<a class="headerlink" href="#seleccion-y-filtrado" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;columna&#39;</span><span class="p">]</span>                         <span class="c1"># Seleccionar una columna  </span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;col1&#39;</span><span class="p">,</span> <span class="s1">&#39;col2&#39;</span><span class="p">]]</span>                  <span class="c1"># Seleccionar varias columnas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filas</span><span class="p">,</span> <span class="n">columnas</span><span class="p">]</span>               <span class="c1"># Selección por etiquetas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">filas</span><span class="p">,</span> <span class="n">columnas</span><span class="p">]</span>              <span class="c1"># Selección por posición  </span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;col&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>                     <span class="c1"># Filtrado por condición  </span>
+</pre></div>
+</div>
 </section>
-<section id="id4">
-<h2>3. ⚙️<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Permite escribir scripts que automatizan tareas repetitivas como procesamiento de archivos, web scraping o administración de sistemas.</p></li>
-<li><p>Librerías clave: <strong>Selenium</strong>, <strong>BeautifulSoup</strong>, <strong>OS</strong>, <strong>shutil</strong>.</p></li>
-</ul>
+<hr class="docutils" />
+<section id="modificacion-de-datos">
+<h2>Modificación de Datos<a class="headerlink" href="#modificacion-de-datos" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;nueva_col&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span>       <span class="c1"># Crear nueva columna  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;viejo&#39;</span><span class="p">:</span> <span class="s1">&#39;nuevo&#39;</span><span class="p">})</span>           <span class="c1"># Renombrar columnas  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;columna&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>                      <span class="c1"># Eliminar columna  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>                                <span class="c1"># Eliminar fila  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;columna&#39;</span><span class="p">)</span>                       <span class="c1"># Ordenar  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>                                     <span class="c1"># Rellenar NaNs  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>                                      <span class="c1"># Eliminar NaNs  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">})</span>                           <span class="c1"># Reemplazar valores  </span>
+</pre></div>
+</div>
 </section>
-<section id="id5">
-<h2>4. 💻<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Se usa para crear aplicaciones de escritorio, videojuegos y software en general.</p></li>
-<li><p>Librerías clave: <strong>PyQt</strong>, <strong>Tkinter</strong>, <strong>Kivy</strong>, <strong>Pygame</strong>.</p></li>
-</ul>
+<hr class="docutils" />
+<section id="agrupacion-y-combinacion">
+<h2>Agrupación y Combinación<a class="headerlink" href="#agrupacion-y-combinacion" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;columna&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>                    <span class="c1"># Agrupación  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">)</span>                         <span class="c1"># Join entre DataFrames  </span>
+<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">])</span>                           <span class="c1"># Concatenación   </span>
+</pre></div>
+</div>
 </section>
-<section id="id6">
-<h2>5.  🔐<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Python es utilizado para análisis forense, pruebas de penetración y creación de herramientas de seguridad.</p></li>
-<li><p>Librerías clave: <strong>Scapy</strong>, <strong>PyCryptodome</strong>, <strong>Impacket</strong>, <strong>Requests</strong>.</p></li>
-</ul>
+<section id="estadisticas-y-operaciones">
+<h2>Estadísticas y Operaciones<a class="headerlink" href="#estadisticas-y-operaciones" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>                                      <span class="c1"># Promedio  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>                                       <span class="c1"># Suma  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">df</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>                             <span class="c1"># Mínimo y máximo  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span> <span class="n">df</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>                             <span class="c1"># Desviación y varianza  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>                                      <span class="c1"># Correlación  </span>
+<span class="n">df</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(),</span> <span class="n">df</span><span class="o">.</span><span class="n">cumprod</span><span class="p">()</span>                      <span class="c1"># Acumulados  </span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -520,20 +500,20 @@ for (let i = 0; i &lt; n; i++) {
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="1.intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Bienvenidos a Python-Universidad del norte</p>
+        <p class="prev-next-title">Introducción</p>
       </div>
     </a>
     <a class="right-next"
-       href="2.ejemplos_pd.html"
+       href="3.ejemplo.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Funciones Principales de Pandas</p>
+        <p class="prev-next-title">Ejemplo de limpieza en pandas</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -554,21 +534,14 @@ for (let i = 0; i &lt; n; i++) {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introducción</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#java">Java</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c">C++</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript">JavaScript</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 🌐</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 📊🤖</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. ⚙️</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 💻</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5.  🔐</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lectura-y-escritura-de-datos">Lectura y Escritura de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-objetos">Creación de Objetos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploracion-y-resumen">Exploración y Resumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccion-y-filtrado">Selección y Filtrado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modificacion-de-datos">Modificación de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupacion-y-combinacion">Agrupación y Combinación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-y-operaciones">Estadísticas y Operaciones</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
